@@ -1,0 +1,244 @@
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end CSS RESET */
+
+
+.name { 
+    position: relative;
+   /* padding: 2%;
+   outline: 1px solid red;*/
+   }
+   .name:hover {cursor:pointer;}
+  
+   .name .before { 
+     display: inline-block;
+     opacity: 1;
+     transition: opacity .5s ease-in-out; }
+  
+     .afterS {display: none;}
+  
+   .afterE {display: none;}
+   
+   .name:hover .afterS { 
+     display: inline-block; 
+     opacity: 1;
+     position: absolute; 
+     left: 15px;
+     top: 0;
+   
+     animation: fullName .5s ease-in;
+       
+   }
+   .name:hover .afterE { 
+     display: inline-block; 
+     opacity: 1;
+     position: relative; 
+     left: 35px; 
+     top: 0;
+     animation: fullName 1s ease-in;
+       
+   }
+   
+   .name:hover .j {
+   animation: name1 .5s ease forwards; 
+   }
+   
+   .name:hover .e {
+   animation: name2 .5s ease forwards; 
+   }
+   
+   .s, .j, .e {
+     display: inline-block;
+     width: 20px;
+     position: relative;
+   }
+   
+   @keyframes fullName {
+     from {
+       opacity: 0;
+     }
+     to {
+       opacity: 1;
+     }
+   }
+   @keyframes name1 {
+     from {
+     transform: translateX(0px);}
+     to {
+       transform: translateX(60px);}
+   }
+   
+   @keyframes name2 {
+     from {
+     transform: translateX(0px);}
+     to {
+       transform: translateX(60px);}
+   } /*name animation */
+
+
+   .rightNav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5px;
+  }
+
+  @media (max-width: 576px) {
+      .rightNav {
+          position: relative;
+      }
+      .name {
+          display: flex;
+          justify-content: center;
+      }
+  }
+
+  .work {
+     display: inline-block;
+    
+  }
+  .photos {
+    display: inline-block; 
+    
+  }
+  .about {
+    display: inline-block;
+    
+  }
+  .contact {
+    display: inline-block;
+  }
+
+  .gradientborder {
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-bottom: 5px;
+      background-image: linear-gradient(to right, #ddebff, #ffdfcd); 
+      background-size: 100%;
+  }
+
+  .topNav {
+      background-color: white;
+      width: 100%;
+      padding-top: 3%;
+      padding-bottom: 5px;
+
+  }
+
+  .hello {
+    display: inline-block;
+    text-align: center;
+    padding: 3%;
+}
+
+  .hero {
+      display: inline-block;
+      padding-top: 3rem;
+  }
+
+
+
+  .skillTit {
+     padding: 3% 0%;
+      /*display: inline-block;*/
+      margin: auto;
+  }
+
+  .icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .icon i {
+    font-size: 4em;
+    padding: 0.5em;
+  }
+
+  .workTit {
+    padding: 3% 0%;
+     margin: auto;
+ }
+
+ .projectText {
+     display: inline-block;
+     text-align: center;
+     margin: auto;
+ }
+
+ .projectTit {
+    padding: 3% 0%;
+    /*text-align: center;*/
+ }
+
+ .projectDesc {
+     padding: 0% 15% 4% 15%;
+     /*text-align: center;*/
+     text-align: justify;
+ }
+
+ .more {
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 10%;
+}
+
+.imageContain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5%;
+    margin: 10px 10px;
+}
+
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

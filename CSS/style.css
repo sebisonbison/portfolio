@@ -237,8 +237,45 @@ table {
     margin: 10px 10px;
 }
 
-.carousel-inner {
+.carousel-item {
   display: flex;
   justify-content: center;
   align-items: center;
+  /*right: 25%;*/
+}
+
+.carousel-item.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-block {
+  width: 50%;
+}
+
+.contactme {
+  text-align: center;
+}
+
+.contactHead {
+  margin: 3rem;
+}
+
+form {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.or {
+  margin: 2rem;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
 }

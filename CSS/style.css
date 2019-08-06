@@ -44,6 +44,18 @@ table {
 }
 /* end CSS RESET */
 
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
 
 .name { 
     position: relative;
@@ -65,7 +77,7 @@ table {
      display: inline-block; 
      opacity: 1;
      position: absolute; 
-     left: 15px;
+     left: 1.5em;
      top: 0;
    
      animation: fullName .5s ease-in;
@@ -75,9 +87,9 @@ table {
      display: inline-block; 
      opacity: 1;
      position: relative; 
-     left: 35px; 
+     left: 4.1em; 
      top: 0;
-     animation: fullName 1s ease-in;
+     animation: fullName .75s ease-in;
        
    }
    
@@ -105,16 +117,16 @@ table {
    }
    @keyframes name1 {
      from {
-     transform: translateX(0px);}
+     transform: translateX(0em);}
      to {
-       transform: translateX(60px);}
+       transform: translateX(5.2em);}
    }
    
    @keyframes name2 {
      from {
-     transform: translateX(0px);}
+     transform: translateX(0em);}
      to {
-       transform: translateX(60px);}
+       transform: translateX(5em);}
    } /*name animation */
 
 
@@ -124,7 +136,7 @@ table {
     right: 0;
     display: flex;
     justify-content: space-around;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
 
   @media (max-width: 576px) {
@@ -156,7 +168,7 @@ table {
   .gradientborder {
       padding-left: 0px;
       padding-right: 0px;
-      padding-bottom: 5px;
+      padding-bottom: 10px;
       background-image: linear-gradient(to right, #ddebff, #ffdfcd); 
       background-size: 100%;
   }
@@ -165,7 +177,7 @@ table {
       background-color: white;
       width: 100%;
       padding-top: 3%;
-      padding-bottom: 5px;
+      padding-bottom: 10px;
 
   }
 
@@ -181,11 +193,20 @@ table {
   }
 
 
+.gradientBorder {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-image: linear-gradient(to right, #ddebff, #ffdfcd); 
+  background-size: 100%;
+}
 
   .skillTit {
-     padding: 3% 0%;
-      /*display: inline-block;*/
-      margin: auto;
+      text-align: center;
+      background-color: white;
+      width: 100%;
+      padding-top: 2rem;
   }
 
   .icon {
@@ -193,7 +214,13 @@ table {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      background-color: white;
+      padding-bottom: 2rem;
   }
+
+.skillIcon {
+  padding: 0;
+}
 
   .icon i {
     font-size: 4em;
@@ -201,8 +228,9 @@ table {
   }
 
   .workTit {
-    padding: 3% 0%;
      margin: auto;
+     margin-top: 5%;
+     margin-bottom: 5%;
  }
 
  .projectText {
@@ -238,28 +266,47 @@ table {
 }
 
 .carousel-item {
-  display: flex;
+  /*display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
   /*right: 25%;*/
 }
 
-.carousel-item.active {
+/*.carousel-item.active {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+}*/
 
 .d-block {
   width: 50%;
 }
 
-.contactme {
-  text-align: center;
+.gradiBorder {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 10px;
+  background-image: linear-gradient(to right, #ddebff, #ffdfcd); 
+  background-size: 100%;
 }
 
+.contactme {
+  padding-top: 1em;
+    background-color: white;
+    width: 100%;
+    /*padding-top: 3%;
+    padding-bottom: 5px;*/
+}
+
+
 .contactHead {
-  margin: 3rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.submiter {
+  text-align: center;
 }
 
 form {
@@ -267,15 +314,64 @@ form {
   margin-right: 20%;
 }
 
-.or {
-  margin: 2rem;
+.socials {
+  text-align: center;
 }
 
-.fa {
-  padding: 20px;
+
+.hrText {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  padding: 2rem;
+}
+
+  .hrText::before {
+    content: attr(data-content);
+    background: linear-gradient(to right, transparent, black, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+  }
+  .hrText::after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+    padding: 0 .5em;
+    line-height: 1.7em;
+    color: black;
+    background-color: white;
+  }}
+
+
+.or {
+  margin: 2rem;
+  /*border: 1px solid black;*/
+
+}
+
+.fab {
+  /*padding: 20px;*/
   font-size: 30px;
-  width: 30px;
+  /*width: 50px;*/
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
+  margin: 2rem;
+}
+
+.fab:hover {
+  opacity: 0.7;
+}
+
+.footer{
+  text-align: center;
+ /* color: black;*/
 }
